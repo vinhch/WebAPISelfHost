@@ -12,6 +12,9 @@ namespace WebAPISelfHost
     {
         public void Configuration(IAppBuilder app)
         {
+            // Add middleware
+            app.UseSampleMiddleware();
+
             // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
             // Configure Web API for self-host.
             var config = new HttpConfiguration();
